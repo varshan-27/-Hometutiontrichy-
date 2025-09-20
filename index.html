@@ -42,12 +42,15 @@
   .section { max-width:1200px; margin:50px auto; padding:20px; }
   h2 { font-size:1.8em; color:#0097a7; margin-bottom:25px; text-align:center; }
   .row { display:flex; gap:25px; flex-wrap:wrap; justify-content:center; }
-  .tutor-box {
-  max-width: 100px;   /* smaller width */
-  padding: 10px;      /* less padding */
-  font-size: 0.9em;   /* slightly smaller text */
+.card, .register-box {
+  flex:1;
+  min-width:260px;
+  background: linear-gradient(135deg, #ffffff, #f1f8e9);
+  border-radius:20px;
+  padding:25px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
   .card, .register-box {
     flex:1; min-width:260px; background: linear-gradient(135deg, #ffffff, #f1f8e9);
     border-radius:20px; padding:25px; box-shadow:0 8px 25px rgba(0,0,0,0.1);
@@ -350,6 +353,7 @@ function populateDashboardComments() {
 
 </body>
 </html>
+
 
 
 
